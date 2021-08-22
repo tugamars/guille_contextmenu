@@ -96,7 +96,7 @@ function drawMenu(v){
 
             let delay = i/10;  //DELAY DE ANIMACIÓN AL MOSTRAR LISTA 
             $("#menu-container").append(`
-                <div class="te table-code hvr-rectangle-out hvr-icon-forward" id = "${i}" style="animation-delay:${delay}s" text="${v.data[i]['text']}" execute="${v.data[i]['toDo']}"> 
+                <div class="te table-code hvr-rectangle-out hvr-icon-forward" id = "${i}" style="animation-delay:${delay}s" text='${v.data[i]['text']}' execute='${JSON.stringify(v.data[i]['toDo'])}'> 
                     ${v.data[i]['text']}<i class="fas ${icono}"></i>
                 </div>
             `);

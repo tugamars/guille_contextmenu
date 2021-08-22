@@ -29,7 +29,7 @@ AddEventHandler("guille_cont:client:open", function(title, data, cb, useCoords, 
                 log("error", "The data toDo does not exist in table data, read the guille_contextmenu docs")
                 return
             end
-            v.toDo = v.toDo:gsub('"', "'")
+            v.toDo = v.toDo
         end
         if useCoords then
             log("info", "Menu created")
