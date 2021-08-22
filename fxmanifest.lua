@@ -7,7 +7,8 @@ author 'guillerp#1928 & ZallaxDev'
 description 'Menu with animations and icons'
 
 client_scripts {
-    'client/client.lu*'
+    'client/client.lu*',
+    'callbacks/**/*.lua',
 }
 
 ui_page 'ui/index.html'
